@@ -23,23 +23,28 @@ var init = function(){
 	backgroundStyle = '#ffffff';
 
 	palettes = [
-	   [{r:40,g:105,b:169,frq:1},
-		{r:60,g:158,b:255,frq:1}, 
-		{r:30,g:30,b:30,frq:1}, 
-		{r:255,g:224,b:171,frq:1},
-		{r:255,g:255,b:255,frq:1}],
+	        [{r:16, g:8,  b:18, frq:30},
+	      	 {r:200,g:20, b:47, frq:60},
+	 	 {r:232,g:227,b:228,frq:5},
+		 {r:242,g:242,b:242,frq:5}],
+
+	        [{r:40, g:105,b:169,frq:1},
+		 {r:60, g:158,b:255,frq:1}, 
+		 {r:30, g:30, b:30, frq:1}, 
+		 {r:255,g:224,b:171,frq:1},
+		 {r:255,g:255,b:255,frq:1}],
 		
-		[{r:1,g:27,b:71,frq:1},
-		{r:103,g:121,b:153,frq:1}, 
-		{r:204,g:204,b:204,frq:1}, 
-		{r:255,g:203,b:150,frq:1}, 
-		{r:255,g:150,b:46,frq:1}],
+		[{r:1,  g:27, b:71, frq:1},
+		 {r:103,g:121,b:153,frq:1}, 
+		 {r:204,g:204,b:204,frq:1}, 
+		 {r:255,g:203,b:150,frq:1}, 
+		 {r:255,g:150,b:46, frq:1}],
 		
-		[{r:255,g:179,b:84,frq:100},
-		{r:234,g:104,b:70,frq:45}, 
-		{r:203,g:54,b:73,frq:22}, 
-		{r:105,g:42,b:73,frq:10}, 
-		{r:63,g:97,b:96,frq:90}]
+		[{r:255,g:179,b:84, frq:100},
+		 {r:234,g:104,b:70, frq:45}, 
+		 {r:203,g:54, b:73, frq:22}, 
+		 {r:105,g:42, b:73, frq:10}, 
+		 {r:63, g:97, b:96, frq:90}]
 	];
 
 	mouseActions = [
@@ -57,7 +62,7 @@ var init = function(){
 	
 	for(i = 0; i < TileGridW * TileGridH; i++) TileGrid[i] = new Tile();
 	
-	palette = Math.floor(Math.random() * palettes.length);
+	palette = 0 //Math.floor(Math.random() * palettes.length);
 	setPalette(palette);
 
 	mouseAction = 0;
